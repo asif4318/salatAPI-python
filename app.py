@@ -58,5 +58,5 @@ def get_dhuhr(longitude:float, time_zone_offset:int, timezone: datetime.datetime
 
 #Dhuhr time for greenwhich not accounting for DST
 est = pytz.timezone('US/Eastern')
-print(get_dhuhr(82.3, 5, pytz.utc).time())
+print(get_dhuhr(82.3, 5, est).time())
 #print(get_dhuhr(82.3,5))
